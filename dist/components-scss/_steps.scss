@@ -1,0 +1,63 @@
+.main-steps {
+  height: 100%;
+  text-align: center;
+  margin-top: 10vh;
+  padding: 1.5em 0 0;
+
+  h2 {
+    margin-bottom: 10vh;
+    letter-spacing: 5.5px;
+  }
+
+  .main-steps-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5em 0;
+  }
+
+  p {
+    text-align: justify;
+    padding: 0 0.5em;
+    margin-right: 0.5em;
+    color: white;
+  }
+
+  img {
+    width: 45%;
+  }
+}
+
+.list-liner-change-right {
+  background-image: linear-gradient(to right,
+      #d16ba5,
+      #c777b9,
+      #ba83ca,
+      #aa8fd8,
+      #9a9ae1,
+      #8aa7ec,
+      #79b3f4,
+      #69bff8,
+      #52cffe,
+      #41dfff,
+      #46eefa,
+      #5ffbf1);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+.list-liner-change-left {
+  background-image: linear-gradient(to left,
+      #d16ba5,
+      #c777b9,
+      #ba83ca,
+      #aa8fd8,
+      #9a9ae1,
+      #8aa7ec,
+      #79b3f4,
+      #69bff8,
+      #52cffe,
+      #41dfff,
+      #46eefa,
+      #5ffbf1);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}

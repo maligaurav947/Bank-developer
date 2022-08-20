@@ -1,0 +1,26 @@
+.main-why {
+ height: 100%;
+ display: grid;
+ place-content: center;
+ padding: 1.5em 10em 0;
+ margin-top: 15vh;
+
+ .main-why__text {
+  li {
+   list-style-type: decimal;
+   margin: 0.5em 0;
+  }
+
+  .main-why__title {
+   text-align: center;
+   margin-bottom: 7vh;
+  }
+
+  p {
+   margin: 1.5em 0;
+   text-align: justify;
+
+  }
+
+ }
+}

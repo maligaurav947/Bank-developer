@@ -1,0 +1,72 @@
+.close-modal {
+ position: absolute;
+ top: 0.1rem;
+ right: 1.2rem;
+ font-size: 3rem;
+ color: #333;
+ cursor: pointer;
+ border: none;
+ background: none;
+}
+
+h1 {
+ font-size: 2rem;
+ margin-bottom: 1.5rem;
+}
+
+p {
+ font-size: 1.1rem;
+}
+
+.modal {
+ position: fixed;
+ top: 50%;
+ left: 50%;
+ width: 50%;
+ height: 35%;
+ transform: translate(-50%, -50%);
+ background-color: white;
+ padding: 2rem;
+ border-radius: 5px;
+ box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+ z-index: 10;
+}
+
+.overlay {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(0, 0, 0, 0.615);
+ backdrop-filter: blur(1px);
+ z-index: 5;
+}
+
+.login {
+ display: grid;
+ place-content: center;
+}
+
+.input-form-user__name,
+.input-form-user__pass {
+ display: block;
+ width: 15em;
+ height: 2.5em;
+ outline: none;
+ padding: 0.5em 0.3em;
+ margin: 0.5em 0;
+ border: none;
+ border-bottom: 2px solid black;
+}
+
+.login__btn {
+ padding-top: 0.6em;
+ display: block;
+ text-align: center;
+ margin-top: 2vh;
+ height: 3em;
+ width: 12em;
+ border-radius: 30px;
+ background-color: #00ff7f;
+}

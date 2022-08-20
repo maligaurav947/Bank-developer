@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Account</title>
+  <link rel="stylesheet" href="../dist/css/main.css" />
+  <script src="https://kit.fontawesome.com/491ef358ed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="main-header" id="header">
+    <h3 class="header-logo">Bank For Developer</h3>
+    <div class="login-form">
+      <input type="text" placeholder="user" id="loginInputUser" class="inputlogin" required />
+      <input type="password" placeholder="PIN" maxlength="4" id="loginInputPass" class="inputlogin" required />
+      <button id="btnlogin" class="btn-header-account">
+        <a href="">Login</a>
+      </button>
+      </div>
+      </header>
+      
+      <section class="main-account" id="account">
+        <div class="total-blance">$<span id="total-digit">12,542</span></div>
+        <div class="container" id="account">
+      <div class="left-section">
+        <div class="send-money">
+          <h3 class="send-money__title">Send Money</h3>
+          <div class="send-money__input">
+            <input type="text" placeholder="Your Unique Id" name="" id="" />
+            <input type="text" placeholder="Amount" name="" id="sendmoney" />
+          </div>
+          <div class="btn-group">
+            <button class="btn" id="sendmoneybtn" onclick="send()">Send Money</button>
+          </div>
+        </div>
+        <div class="request-loan">
+          <h3 class="request-loan__title">Request Loan</h3>
+          <div class="request-loan__input">
+            <input type="text" placeholder="Amount" name="" id="loaninput" />
+          </div>
+          <div class="btn-group">
+            <button class="btn" id="loanbtn" onclick="loan()">
+              Get A Loan
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="right-section">
+        <div class="right-section__div">
+        <div id="blanceresulthidden">
+          <div class="blanceresult__class light">
+            <i class="fa-solid fa-sack-dollar"></i>
+            <div class="blanceresult__text"> $<span id="balanceresult"></span></div>
+          </div>
+          
+          </div>
+          <div id="blanceresulthiddensend">
+            <div class="blanceresult__class red">
+            <i class="fa-solid fa-sack-dollar"></i>
+            <div class="blanceresult__text"> -$ <span id="balanceresultsend"></span></div>
+          </div>
+        </div>
+          <div class="blanceresult__class light">
+            <i class="fa-solid fa-sack-dollar"></i>
+            <div class="blanceresult__text"> $ <span id="balanceresult">12,542</span></div>
+          </div>
+          <div class="blanceresult__class red">
+            <i class="fa-solid fa-sack-dollar"></i>
+            <div class="blanceresult__text"> -$ <span id="balanceresult">421</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="btn-group">
+      <button class="btn-logout" id="btnlogout"><a>Logout</a></button>
+    </div>
+  </section>
+  
+  <script src="../js/account.js"></script>
+  </body>
+
+</html>

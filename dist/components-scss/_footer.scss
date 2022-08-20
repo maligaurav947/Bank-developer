@@ -1,0 +1,23 @@
+footer {
+ background-color: rgba(0, 255, 128, 0.525);
+ height: 100%;
+ display: flex;
+ place-content: center;
+}
+
+footer li {
+ padding-top: 12px;
+ font-size: 17px;
+ font-weight: 300;
+ list-style-type: none;
+ cursor: pointer;
+}
+
+footer li:hover {
+ border-bottom: 1.5px solid rgb(0, 0, 0);
+}
+
+footer div {
+ font-size: 25px;
+ padding: 30px;
+}

@@ -1,0 +1,61 @@
+#contact-main {
+ h2 {
+  margin-top: -0.5em;
+  margin-bottom: 1.5em;
+ }
+
+ height: 100vh;
+ display: grid;
+ place-content: center;
+ text-align: center;
+
+ .contact-main__div {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0.8em 0.6em;
+
+  .input-info {
+   margin-left: 2em;
+
+   .form {
+    display: flex;
+    flex-direction: column;
+
+    .label-list {
+     font-size: 1.4rem;
+
+     input {
+      padding: 0 0.3em;
+      text-align: unset;
+      color: black;
+      margin: 1em 0;
+      width: 500px;
+      height: 45px;
+      outline: none;
+      border: none;
+      font-size: 1.2rem;
+      border-bottom: 2px solid black;
+     }
+
+     textarea {
+      margin: 1em 0;
+      font-size: 1.2rem;
+      min-height: 65px;
+      max-height: 45px;
+      max-width: 500px;
+      min-width: 500px;
+      padding: 0.2em 0.3em;
+      text-align: left;
+      color: black;
+      outline: none;
+      border: none;
+      font-size: 1.2rem;
+      border-bottom: 2px solid black;
+     }
+    }
+   }
+  }
+ }
+}

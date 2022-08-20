@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import "./variables";
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Open Sans', sans-serif;
+}
+
+html {
+ scroll-behavior: smooth;
+}
+
+a {
+ text-decoration: none;
+ color: black;
+}
+
+li {
+ list-style-type: none;
+}
+
+.btn-header {
+ border: none;
+ height: 50px;
+ border-radius: 50px;
+ background-color: $main-color;
+ cursor: pointer;
+ outline: none;
+ color: black;
+
+ &:hover {
+  transition: all 150ms linear;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
+ }
+}
+
+::-webkit-scrollbar {
+ width: 15px;
+
+}
+
+::-webkit-scrollbar-thumb {
+ background-color: springgreen;
+}
+
+.btn {
+
+ cursor: pointer;
+ border: none;
+ height: 40px;
+ width: 150px;
+ font-size: 1rem;
+ padding: 0 1em;
+ border-radius: 30px;
+ background-color: $main-color;
+ font-weight: 500;
+ outline: none;
+
+ &:hover {
+  transition: all 150ms linear;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
+ }
+}
+
+img {
+ max-width: 100%;
+}
+
+section {
+ height: 100%;
+ width: 100%;
+ padding: 0 2.5em;
+}
+
+.main-title {
+ font-size: 2.1rem;
+ font-family: 'Arvo', serif;
+}
+
+.main-info {
+ font-size: 1.05rem;
+ font-family: 'Open Sans', sans-serif;
+ color: rgba(77, 77, 77, 0.76);
+ font-weight: 500;
+}
+
+.changecolor {
+ background-color: $main-color;
+ padding: 0 0.2em;
+}
+
+.hidden {
+ display: none;
+}

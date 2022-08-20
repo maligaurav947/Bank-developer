@@ -1,0 +1,27 @@
+.main-hero {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 70vh;
+
+ img {
+  box-shadow: rgba(0, 0, 0, 0.4) 2px 30px 60px;
+ }
+
+ .main-hero__text {
+  width: 70vw;
+  padding: 0 0.5em;
+  margin-left: 0.5em;
+
+  h2 {
+   letter-spacing: 8px;
+  }
+
+  h2,
+  p,
+  button {
+   text-align: justify;
+   margin: 0.5em 0;
+  }
+ }
+}
