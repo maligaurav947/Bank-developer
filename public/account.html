@@ -7,20 +7,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Account</title>
   <link rel="stylesheet" href="../dist/css/main.css" />
-  <script src="https://kit.fontawesome.com/491ef358ed.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/ef607e9e8d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <header class="main-header" id="header">
-    <h3 class="header-logo">Bank For Developer</h3>
-    <div class="login-form">
-      <input type="text" placeholder="user" id="loginInputUser" class="inputlogin" required />
-      <input type="password" placeholder="PIN" maxlength="4" id="loginInputPass" class="inputlogin" required />
-      <button id="btnlogin" class="btn-header-account">
-        <a href="">Login</a>
-      </button>
+  <div class="login-account" id="loginaccount">
+    <span id="loginicon">
+      <i class="fa-solid fa-xmark"></i>
+    </span>
+    <h3 class="login-account__title">Login</h3>
+      <div class="login-account__form">
+        <input type="email" name="" placeholder="Enter Your Email" id="">
+      <input type="password" name="" placeholder="Enter Your Password">
       </div>
-      </header>
+    <button class="login-account__btn" id="loginbtn">Login</button>
+  </div>
       
       <section class="main-account" id="account">
         <div class="total-blance">$<span id="total-digit">12,542</span></div>

@@ -28,7 +28,7 @@
   }
 }
 .main-account {
-  height: 80vh;
+  height: 100vh;
   display: none;
   .total-blance {
     text-align: end;
@@ -198,3 +198,75 @@
 .red{
   background-color: rgba(200, 32, 32, 0.747);
 }
+
+
+
+.login-account{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width:90%;
+  height: 80%;
+  background-color: rgb(55, 120, 177);
+  transform: translate(-50%,-50%);
+  text-align: center;
+  display: grid;
+  padding: 0.5em 0;
+  align-items: center;
+  justify-content: center;
+  #loginicon{
+    position: fixed;
+    right: 15px;
+    top: 15px;
+display: flex;
+align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: transparent;
+ 
+    i{
+      font-size: 1.9rem;
+ position: absolute;
+ top: 6px;
+ left: 12.5px;
+    }
+  }
+  &__title{
+    font-size: 3.5rem;
+    color: orange;
+  }
+  &__form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    input{
+      padding: 0 0.2em ;
+      margin: 0.9em 0;
+      width: 550px;
+      height: 45px;
+      border: none;
+      background-color: transparent;
+      border-bottom: 2px solid black;
+      color: white;
+      outline: none;
+    &::placeholder{
+      color: white;
+    }
+    }
+  }
+  &__btn{
+    font-size: 1.2rem;
+    color: white;
+    outline: none;
+    border: none;
+    background-color: cadetblue;
+justify-self: end;
+    height: 45px;
+    width: 150px;
+  }
+}
+

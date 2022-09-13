@@ -1,25 +1,12 @@
-const btnLogout = document.getElementById("btnlogout");
-const sectionAccount = document.getElementById("account");
+const loginaccount = document.getElementById("loginaccount");
+const loginiconcross = document.getElementById("loginicon");
+const account = document.getElementById("account");
+const loginbtn = document.getElementById("loginbtn");
 
-btnLogout.addEventListener("click", () => {
-  sectionAccount.style.display = "none";
+loginiconcross.addEventListener("click", () => {
+  loginaccount.style.display = "none";
 });
-
-const btnLogin = document.getElementById("btnlogin");
-
-btnLogin.addEventListener("click", () => {
-  sectionAccount.style.display = "block";
+loginbtn.addEventListener("click", () => {
+  account.style.display = "grid";
+  loginaccount.style.display = "none";
 });
-
-
-function loan() {
-  const loanInput = document.getElementById("loaninput").value;
-  document.getElementById("balanceresult").innerText = loanInput;
-  document.getElementById("blanceresulthidden").style.display = "block";
-}
-
-function send() {
-  const sendMoney = document.getElementById("sendmoney").value;
-  document.getElementById("balanceresultsend").innerText = sendMoney;
-  document.getElementById("blanceresulthiddensend").style.display = "block";
-}
