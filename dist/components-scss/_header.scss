@@ -5,18 +5,17 @@
 
  height: 12vh;
  padding: 0.5em;
- background-color: rgba(255, 255, 255, 0.781);
-position: sticky;
-top: 0;
+ background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 z-index: 9999;
  .header-logo {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: 'Raleway', sans-serif;
-  text-shadow: 1px 1px black;
+  text-shadow: 1px 1.5px 1px rgb(0, 0, 0);
   font-weight: 700;
   letter-spacing: 3px;
   font-weight: 400;
-  color: rgba(77, 77, 77, 0.76);
+  color: rgb(51, 255, 0);
  }
 
  .nav-bar-header {
