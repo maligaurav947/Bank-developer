@@ -1,87 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account</title>
+    <link rel="stylesheet" href="../dist/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/ef607e9e8d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Account</title>
-  <link rel="stylesheet" href="../dist/css/main.css" />
-  <script src="https://kit.fontawesome.com/ef607e9e8d.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <div class="login-account" id="loginaccount">
-    <span id="loginicon">
-      <i class="fa-solid fa-xmark"></i>
-    </span>
-    <h3 class="login-account__title">Login</h3>
+  <body>
+    <div class="login-account" id="loginaccount">
+      <span id="loginicon">
+        <i class="fa-solid fa-xmark"></i>
+      </span>
+      <h3 class="login-account__title">Login</h3>
       <div class="login-account__form">
-        <input type="email" name="" placeholder="Enter Your Email" id="logininputid">
-      <input type="password" name="" placeholder="Enter Your Password" id="logininputpass">
+        <input
+          type="email"
+          name=""
+          placeholder="Enter Your Email"
+          id="logininputid"
+        />
+        <input
+          type="password"
+          name=""
+          placeholder="Enter Your Password"
+          id="logininputpass"
+        />
       </div>
-    <button class="login-account__btn" id="loginbtn">Login</button>
-  </div>
-      
-      <section class="main-account" id="account">
-        <h2>Welcome <span id="itemname"></span></h2>
-        <div class="total-blance">$<span id="totaldigit"></span></div>
-        <div class="container" id="account">
-      <div class="left-section">
-        <div class="send-money">
-          <h3 class="send-money__title">Send Money</h3>
-          <div class="send-money__input">
-            <input type="text" placeholder="Your Unique Id" name="" id="" />
-            <input type="text" placeholder="Amount" name="" id="sendmoney" />
-          </div>
-          <div class="btn-group">
-            <button class="btn" id="sendmoneybtn" onclick="send()">Send Money</button>
-          </div>
-        </div>
-        <div class="request-loan">
-          <h3 class="request-loan__title">Request Loan</h3>
-          <div class="request-loan__input">
-            <input type="text" placeholder="Amount" name="" id="loaninput" />
-          </div>
-          <div class="btn-group">
-            <button class="btn" id="loanbtn" onclick="loan()">
-              Get A Loan
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="right-section">
-        <div class="right-section__div">
-        <div id="blanceresulthidden">
-          <div class="blanceresult__class light">
-            <i class="fa-solid fa-sack-dollar"></i>
-            <div class="blanceresult__text"> $<span id="balanceresult"></span></div>
-          </div>
-          
-          </div>
-          <div id="blanceresulthiddensend">
-            <div class="blanceresult__class red">
-            <i class="fa-solid fa-sack-dollar"></i>
-            <div class="blanceresult__text"> -$ <span id="balanceresultsend"></span></div>
-          </div>
-        </div>
-          <div class="blanceresult__class light">
-            <i class="fa-solid fa-sack-dollar"></i>
-            <div class="blanceresult__text"> $ <span id="balanceresult"></span></div>
-          </div>
-          <div class="blanceresult__class red">
-            <i class="fa-solid fa-sack-dollar"></i>
-            <div class="blanceresult__text"> -$ <span id="balanceresult"></span></div>
-          </div>
-        </div>
-      </div>
+      <button class="login-account__btn" id="loginbtn">Login</button>
     </div>
-    <div class="btn-group">
-      <button class="btn-logout" id="btnlogout"><a>Logout</a></button>
-    </div>
-  </section>
-  
-  <script src="../js/account.js"></script>
-  </body>
 
+    <section class="main-account" id="account">
+      <h2 style="text-align: center; font-size: 2.5rem; position: fixed; top: 15px; left: 38%;">Welcome <span id="itemname" style="color: rgb(132, 255, 0); border-bottom: 2px solid black;"></span></h2>
+      <div class="total-blance">$<span id="totaldigit"></span></div>
+      <div class="container" id="account">
+        <div class="left-section">
+          <div class="send-money">
+            <h3 class="send-money__title">Send Money</h3>
+            <div class="send-money__input">
+              <input type="text" placeholder="Your Unique Id" name="" id="" />
+              <input type="text" placeholder="Amount" name="" id="sendmoney" />
+            </div>
+            <div class="btn-group">
+              <button class="btn" id="sendmoneybtn" onclick="send()">
+                Send Money
+              </button>
+            </div>
+          </div>
+          <div class="request-loan">
+            <h3 class="request-loan__title">Request Loan</h3>
+            <div class="request-loan__input">
+              <input type="text" placeholder="Amount" name="" id="loaninput" />
+            </div>
+            <div class="btn-group">
+              <button class="btn" id="loanbtn" onclick="loan()">
+                Get A Loan
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="right-section">
+          <div class="right-section__div">
+            <div id="blanceresulthidden">
+              
+              <div class="blanceresult__class light">
+                <i class="fa-solid fa-sack-dollar"></i>
+                <div class="blanceresult__text">
+                  $<span id="balanceresultsend"></span>
+                </div>
+              </div>
+            
+            </div>
+            <div id="blanceresulthiddensend">
+              <div class="blanceresult__class red">
+                <i class="fa-solid fa-sack-dollar"></i>
+                <div class="blanceresult__text">
+                  -$ <span id="balanceresultsend"></span>
+                </div>
+              </div>
+            </div>
+            <div class="blanceresult__class light">
+              <i class="fa-solid fa-sack-dollar"></i>
+              <div class="blanceresult__text">
+                $ <span id="ent1"></span>
+              </div>
+            </div>
+            
+            <div class="blanceresult__class red">
+              <i class="fa-solid fa-sack-dollar"></i>
+              <div class="blanceresult__text">
+                -$ <span id="ent2"></span>
+              </div>
+            </div>
+            <div class="blanceresult__class light">
+              <i class="fa-solid fa-sack-dollar"></i>
+              <div class="blanceresult__text">
+                $ <span id="ent3"></span>
+              </div>
+            </div>
+            <div class="blanceresult__class red">
+              <i class="fa-solid fa-sack-dollar"></i>
+              <div class="blanceresult__text">
+                -$ <span id="ent4"></span>
+              </div>
+            </div>
+            <div class="blanceresult__class red">
+              <i class="fa-solid fa-sack-dollar"></i>
+              <div class="blanceresult__text">
+                -$ <span id="ent5"></span>
+              </div>
+            </div>
+            <div class="blanceresult__class light">
+              <i class="fa-solid fa-sack-dollar"></i>
+              <div class="blanceresult__text">
+                $ <span id="ent6"></span>
+              </div>
+            </div>
+            <div class="blanceresult__class light">
+              <i class="fa-solid fa-sack-dollar"></i>
+              <div class="blanceresult__text">
+                $ <span id="ent7"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn-logout" id="btnlogout"><a>Logout</a></button>
+      </div>
+    </section>
+
+    <script src="../js/account.js"></script>
+  </body>
 </html>

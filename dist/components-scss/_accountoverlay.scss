@@ -29,7 +29,7 @@
 }
 .main-account {
   height: 100vh;
-  display: none;
+  display: none;//
   .total-blance {
     text-align: end;
     font-size: 2.5rem;
@@ -210,7 +210,7 @@
   background-color: rgb(55, 120, 177);
   transform: translate(-50%,-50%);
   text-align: center;
-  display: grid;
+  display: grid;//
   padding: 0.5em 0;
   align-items: center;
   justify-content: center;
