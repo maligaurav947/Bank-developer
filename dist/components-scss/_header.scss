@@ -2,10 +2,11 @@
  display: flex;
  align-items: center;
  justify-content: space-between;
-
+position: sticky;
+top: 0;
  height: 12vh;
  padding: 0.5em;
- background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+background-color: rgba(240, 248, 255, 0.671);
 box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 z-index: 9999;
  .header-logo {
@@ -15,7 +16,8 @@ z-index: 9999;
   font-weight: 700;
   letter-spacing: 3px;
   font-weight: 400;
-  color: rgb(51, 255, 0);
+color: orange;
+font-family: "Pacifico",cursive;
  }
 
  .nav-bar-header {

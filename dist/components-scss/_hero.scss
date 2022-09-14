@@ -3,7 +3,7 @@
  align-items: center;
  justify-content: center;
  height: 70vh;
-background-color: aliceblue;
+
  img {
   box-shadow: rgba(0, 0, 0, 0.4) 2px 30px 60px;
  }
@@ -14,7 +14,9 @@ background-color: aliceblue;
   margin-left: 0.5em;
 
   h2 {
-   letter-spacing: 8px;
+   letter-spacing: 1.5px;
+   color: orange;
+  text-shadow: 1px 2.5px 2.5px black;
   }
 
   h2,
