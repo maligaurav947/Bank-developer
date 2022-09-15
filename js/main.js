@@ -1,14 +1,20 @@
 'use strict';
-
-const modal = document.querySelector('.modal');
-const overlay = document.querySelector('.overlay');
-const btnCloseModal = document.querySelector('.close-modal');
-const btnsOpenModal = document.querySelectorAll('.show-modal');
-
+const loader = document.getElementById("loader");
+const modal = document.querySelector(".modal");
+const overlay = document.querySelector(".overlay");
+const btnCloseModal = document.querySelector(".close-modal");
+const btnsOpenModal = document.querySelectorAll(".show-modal");
+const mainbody = document.getElementById("mainbody");
 const openModal = function () {
-  modal.classList.remove('hidden');
-  overlay.classList.remove('hidden');
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
 };
+
+function loaderfun() {
+  loader.style.display = "none";
+}
+
+
 
 const closeModal = function () {
   modal.classList.add('hidden');
