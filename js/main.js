@@ -1,38 +1,15 @@
-'use strict';
 const loader = document.getElementById("loader");
-const modal = document.querySelector(".modal");
-const overlay = document.querySelector(".overlay");
-const btnCloseModal = document.querySelector(".close-modal");
-const btnsOpenModal = document.querySelectorAll(".show-modal");
-const mainbody = document.getElementById("mainbody");
-const openModal = function () {
-  modal.classList.remove("hidden");
-  overlay.classList.remove("hidden");
-};
-
+const menubtn = document.getElementById("baricon");
+const bariconcross = document.getElementById("bariconcross");
+const navbar = document.getElementById("navbar");
 function loaderfun() {
   loader.style.display = "none";
 }
-
-
-
-const closeModal = function () {
-  modal.classList.add('hidden');
-  overlay.classList.add('hidden');
-};
-
-for (let i = 0; i < btnsOpenModal.length; i++)
-  btnsOpenModal[i].addEventListener('click', openModal);
-
-btnCloseModal.addEventListener('click', closeModal);
-overlay.addEventListener('click', closeModal);
-
-document.addEventListener('keydown', function (e) {
-  // console.log(e.key);
-
-  if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-    closeModal();
-  }
+menubtn.addEventListener("click", () => {
+  navbar.style.display = "grid";
+  bariconcross.style.display = "grid";
 });
-
-
+bariconcross.addEventListener("click", () => {
+  navbar.style.display = "none";
+  bariconcross.style.display = "none";
+});

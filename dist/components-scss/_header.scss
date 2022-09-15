@@ -4,11 +4,11 @@
   justify-content: space-between;
   position: sticky;
   top: 0;
+
   height: 12vh;
   padding: 0.5em;
-background-color: rgba(240, 248, 255, 0.699);
+  background-color: rgba(240, 248, 255, 0.699);
 
-  
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   z-index: 9999;
   .header-logo {
@@ -32,22 +32,37 @@ background-color: rgba(240, 248, 255, 0.699);
       font-size: 1.3rem;
       padding: 0 0.5em;
       font-weight: 500;
-
     }
+  }
+  #baricon {
+display: none;
+    position: fixed;
+    top: 22px;
+    right: 13px;
+    font-size: 3rem;
+  }
+  #bariconcross{
+    display: none;
+    position: fixed;
+    top: 23.5px;
+    right: 18px;
+    font-size: 2.5rem;
+    color: white;
   }
 }
 .show-modal {
-
   border: none;
   font-weight: 500;
   outline: none;
   font-size: 1.3rem;
   cursor: pointer;
-  padding:  0.5em;
+  padding: 0.5em;
   background-color: transparent;
   transition: 300ms linear;
-  &:hover,:focus{
+  &:hover,
+  :focus {
     color: white;
-   background-color: black;
+    background-color: black;
   }
 }
+

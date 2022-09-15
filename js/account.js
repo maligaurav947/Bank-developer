@@ -13,11 +13,13 @@ const ent4 = document.getElementById("ent4");
 const ent5 = document.getElementById("ent5");
 const ent6 = document.getElementById("ent6");
 const ent7 = document.getElementById("ent7");
-
+const balanceresultsend = document.getElementById("balanceresultsend");
 /*
 
 */
-
+function send() {
+  balanceresultsend.innerText = document.getElementById("sendmoney").value;
+}
 let id1blance = 741 + 1741 - 541 - 2140 + 2685 - 514 + 15514;
 const id1 = {
   email: "maligaurav947@gmail.com",
@@ -75,65 +77,74 @@ const id4 = {
   totalblance: `${Number(id4blance)}`,
 };
 
-loginiconcross.addEventListener("click", () => {
-  loginaccount.style.display = "none";
-});
-loginbtn.addEventListener("click", () => {
-  if (logininputid.value === id1.email) {
-    if (logininputpass.value === id1.pass) {
-      account.style.display = "grid";
-      loginaccount.style.display = "none";
-      itemname.innerText = `${id1.name}`;
-      totaldigit.innerText = `${id1.totalblance}`;
-      ent1.innerText = `${id1.entiry1}`;
-      ent2.innerText = `${id1.entiry2}`;
-      ent3.innerText = `${id1.entiry3}`;
-      ent4.innerText = `${id1.entiry4}`;
-      ent5.innerText = `${id1.entiry5}`;
-      ent6.innerText = `${id1.entiry6}`;
-      ent7.innerText = `${id1.entiry7}`;
+loginiconcross.addEventListener(
+  "click",
+  () => {
+    loginaccount.style.display = "none";
+  },
+  { passive: true }
+);
+loginbtn.addEventListener(
+  "click",
+  () => {
+    if (logininputid.value === id1.email) {
+      if (logininputpass.value === id1.pass) {
+        account.style.display = "grid";
+        loginaccount.style.display = "none";
+        itemname.innerText = `${id1.name}`;
+        totaldigit.innerText = `${id1.totalblance}`;
+        ent1.innerText = `${id1.entiry1}`;
+        ent2.innerText = `${id1.entiry2}`;
+        ent3.innerText = `${id1.entiry3}`;
+        ent4.innerText = `${id1.entiry4}`;
+        ent5.innerText = `${id1.entiry5}`;
+        ent6.innerText = `${id1.entiry6}`;
+        ent7.innerText = `${id1.entiry7}`;
+      }
+    } else if (logininputid.value === id2.email) {
+      if (logininputpass.value === id2.pass) {
+        account.style.display = "grid";
+        loginaccount.style.display = "none";
+        itemname.innerText = `${id2.name}`;
+        totaldigit.innerText = `${id2.totalblance}`;
+        ent1.innerText = `${id2.entiry1}`;
+        ent2.innerText = `${id2.entiry2}`;
+        ent3.innerText = `${id2.entiry3}`;
+        ent4.innerText = `${id2.entiry4}`;
+        ent5.innerText = `${id2.entiry5}`;
+        ent6.innerText = `${id2.entiry6}`;
+        ent7.innerText = `${id2.entiry7}`;
+      }
+    } else if (logininputid.value === id3.email) {
+      if (logininputpass.value === id3.pass) {
+        account.style.display = "grid";
+        loginaccount.style.display = "none";
+        itemname.innerText = `${id3.name}`;
+        totaldigit.innerText = `${id3.totalblance}`;
+        ent1.innerText = `${id3.entiry1}`;
+        ent2.innerText = `${id3.entiry2}`;
+        ent3.innerText = `${id3.entiry3}`;
+        ent4.innerText = `${id3.entiry4}`;
+        ent5.innerText = `${id3.entiry5}`;
+        ent6.innerText = `${id3.entiry6}`;
+        ent7.innerText = `${id3.entiry7}`;
+      }
+    } else if (logininputid.value === id4.email) {
+      if (logininputpass.value === id4.pass) {
+        account.style.display = "grid";
+        loginaccount.style.display = "none";
+        itemname.innerText = `${id4.name}`;
+        totaldigit.innerText = `${id4.totalblance}`;
+        ent1.innerText = `${id4.entiry1}`;
+        ent2.innerText = `${id4.entiry2}`;
+        ent3.innerText = `${id4.entiry3}`;
+        ent4.innerText = `${id4.entiry4}`;
+        ent5.innerText = `${id4.entiry5}`;
+        ent6.innerText = `${id4.entiry6}`;
+        ent7.innerText = `${id4.entiry7}`;
+      }
     }
-  } else if (logininputid.value === id2.email) {
-    if (logininputpass.value === id2.pass) {
-      account.style.display = "grid";
-      loginaccount.style.display = "none";
-      itemname.innerText = `${id2.name}`;
-      totaldigit.innerText = `${id2.totalblance}`;
-      ent1.innerText = `${id2.entiry1}`;
-      ent2.innerText = `${id2.entiry2}`;
-      ent3.innerText = `${id2.entiry3}`;
-      ent4.innerText = `${id2.entiry4}`;
-      ent5.innerText = `${id2.entiry5}`;
-      ent6.innerText = `${id2.entiry6}`;
-      ent7.innerText = `${id2.entiry7}`;
-    }
-  } else if (logininputid.value === id3.email) {
-    if (logininputpass.value === id3.pass) {
-      account.style.display = "grid";
-      loginaccount.style.display = "none";
-      itemname.innerText = `${id3.name}`;
-      totaldigit.innerText = `${id3.totalblance}`;
-      ent1.innerText = `${id3.entiry1}`;
-      ent2.innerText = `${id3.entiry2}`;
-      ent3.innerText = `${id3.entiry3}`;
-      ent4.innerText = `${id3.entiry4}`;
-      ent5.innerText = `${id3.entiry5}`;
-      ent6.innerText = `${id3.entiry6}`;
-      ent7.innerText = `${id3.entiry7}`;
-    }
-  } else if (logininputid.value === id4.email) {
-    if (logininputpass.value === id4.pass) {
-      account.style.display = "grid";
-      loginaccount.style.display = "none";
-      itemname.innerText = `${id4.name}`;
-      totaldigit.innerText = `${id4.totalblance}`;
-      ent1.innerText = `${id4.entiry1}`;
-      ent2.innerText = `${id4.entiry2}`;
-      ent3.innerText = `${id4.entiry3}`;
-      ent4.innerText = `${id4.entiry4}`;
-      ent5.innerText = `${id4.entiry5}`;
-      ent6.innerText = `${id4.entiry6}`;
-      ent7.innerText = `${id4.entiry7}`;
-    }
-  }
-});
+  },
+  { passive: true }
+);
+
