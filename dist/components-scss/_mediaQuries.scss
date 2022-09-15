@@ -1,87 +1,104 @@
 @media screen and(max-width:456px) {
- .main-bar {
-  flex-direction: column;
- }
-
- .main-steps {
-  .main-steps-list {
-   flex-direction: column;
-   padding: 1.5em 0;
-
-   img {
-    padding: 0.4em 0;
-    width: 100%;
-   }
-
-   p {
-    color: black;
-   }
+  .main-bar {
+    flex-direction: column;
   }
 
-  .list-liner-change-right,
-  .list-liner-change-left {
-   background: none;
-  }
- }
+  .nav-header {
+    .nav-bar-header {
+      top: 0px;
+      left: 0px;
+      background-color: rgba(0, 0, 0, 0.811);
+      width: 100vw;
+      height: 80vh;
+      position: fixed;
+      flex-direction: column;
+      text-align: center;
 
- .main-hero {
-  flex-direction: column;
-  height: 100%;
+      a {
+        margin: 5.5vh 0;
 
-  .main-hero__text {
-   width: 100vw;
-   margin: 0;
-  }
- }
-
- h2,
- p {
-  text-align: left;
-  margin: 0;
- }
-
-
- //Contact
-
- #contact-main {
-  h2 {
-   margin: 2.5em 0;
-  }
-
-  .contact-main__div {
-   flex-direction: column;
-
-   .emb-map {
-    iframe {
-     width: 350px;
+        .nav-barlist-header {
+          padding: 0.5em;
+          color: white;
+        }
+      }
     }
-   }
+  }
+  .main-steps {
+    .main-steps-list {
+      flex-direction: column;
+      padding: 1.5em 0;
 
-   .input-info {
-    margin: 1.5em 0;
-
-    .form {
-     .label-list {
-      input {
-       font-size: 0.9rem;
-       width: 350px;
+      img {
+        padding: 0.4em 0;
+        width: 100%;
       }
 
-      textarea {
-       font-size: 0.9rem;
-       width: 350px;
+      p {
+        color: black;
       }
-     }
     }
-   }
+
+    .list-liner-change-right,
+    .list-liner-change-left {
+      background: none;
+    }
   }
- }
- .login-account{
-  input{
-   width: 250px;
+
+  .main-hero {
+    flex-direction: column;
+    height: 100%;
+
+    .main-hero__text {
+      width: 100vw;
+      margin: 0;
+    }
   }
- }
 
+  h2,
+  p {
+    text-align: left;
+    margin: 0;
+  }
 
+  //Contact
 
+  #contact-main {
+    h2 {
+      margin: 2.5em 0;
+    }
+
+    .contact-main__div {
+      flex-direction: column;
+
+      .emb-map {
+        iframe {
+          width: 350px;
+        }
+      }
+
+      .input-info {
+        margin: 1.5em 0;
+
+        .form {
+          .label-list {
+            input {
+              font-size: 0.9rem;
+              width: 350px;
+            }
+
+            textarea {
+              font-size: 0.9rem;
+              width: 350px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .login-account {
+    input {
+      width: 250px;
+    }
+  }
 }

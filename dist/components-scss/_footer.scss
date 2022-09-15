@@ -2,8 +2,9 @@ footer {
  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
  height: 100%;
  display: flex;
- background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
- place-content: center;color: white;
+ background-color: #6883BC;
+ place-content: center;
+ color: rgb(0, 0, 0);
 }
 
 footer li {
@@ -12,7 +13,6 @@ footer li {
  font-weight: 300;
  list-style-type: none;
  cursor: pointer;
-
 }
 
 footer li:hover {

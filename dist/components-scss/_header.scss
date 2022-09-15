@@ -1,37 +1,53 @@
 .main-header {
- display: flex;
- align-items: center;
- justify-content: space-between;
-position: sticky;
-top: 0;
- height: 12vh;
- padding: 0.5em;
-background-color: rgba(240, 248, 255, 0.671);
-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-z-index: 9999;
- .header-logo {
-  font-size: 2.5rem;
-  font-family: 'Raleway', sans-serif;
-  text-shadow: 1px 1.5px 1px rgb(0, 0, 0);
-  font-weight: 700;
-  letter-spacing: 3px;
-  font-weight: 400;
-color: orange;
-font-family: "Pacifico",cursive;
- }
-
- .nav-bar-header {
   display: flex;
   align-items: center;
-  height: 55px;
-  font-family: 'Open Sans', sans-serif;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  height: 12vh;
+  padding: 0.5em;
+background-color: rgba(240, 248, 255, 0.699);
 
-
-  .nav-barlist-header {
-   font-size: 1.3rem;
-   padding: 0 0.8em;
-   font-weight: 500;
-   color: rgba(77, 77, 77, 0.76);
+  
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  z-index: 9999;
+  .header-logo {
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+    text-shadow: 1px 1.5px 1px rgb(0, 0, 0);
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-weight: 400;
+    color: orange;
+    font-family: "Pacifico", cursive;
   }
- }
+
+  .nav-bar-header {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    font-family: "Open Sans", sans-serif;
+
+    .nav-barlist-header {
+      font-size: 1.3rem;
+      padding: 0 0.5em;
+      font-weight: 500;
+
+    }
+  }
+}
+.show-modal {
+
+  border: none;
+  font-weight: 500;
+  outline: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding:  0.5em;
+  background-color: transparent;
+  transition: 300ms linear;
+  &:hover,:focus{
+    color: white;
+   background-color: black;
+  }
 }
