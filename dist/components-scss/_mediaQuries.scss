@@ -1,5 +1,4 @@
 @media screen and(max-width:456px) {
-
   .main-header {
     height: 10vh;
     #baricon {
@@ -65,12 +64,11 @@
     }
     .main-hero__text {
       width: 100vw;
-      margin-top: 2vh;
 
       h2 {
         letter-spacing: none;
         text-align: left;
-        margin: 0;
+        margin-top: 1.5vh;
       }
       p {
         text-align: justify;
@@ -78,11 +76,23 @@
     }
   }
   //bar
-.main-bar{
-  flex-direction: column;
-  display: none;
-}
+  .main-bar {
+    //flex-direction: column;
+    display: none;
+  }
+  //swhy
 
+#Why{
+ padding: 0 0.5em;
+margin-top: -15.5vh;
+div{
+  h2{
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+ 
+}
   //Contact
 
   #contact-main {
