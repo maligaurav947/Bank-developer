@@ -13,10 +13,13 @@ const ent4 = document.getElementById("ent4");
 const ent5 = document.getElementById("ent5");
 const ent6 = document.getElementById("ent6");
 const ent7 = document.getElementById("ent7");
+const back = document.getElementById("back");
 const balanceresultsend = document.getElementById("balanceresultsend");
 /*
 account
 */
+
+back.addEventListener("click");
 function send() {
   balanceresultsend.innerText = document.getElementById("sendmoney").value;
 }
