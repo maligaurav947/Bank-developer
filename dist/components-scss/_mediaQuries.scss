@@ -1,12 +1,16 @@
 @media screen and(max-width:456px) {
+
+  .main-title {
+    font-size: 2.4rem;
+  }
   .main-header {
     height: 10vh;
     #baricon {
-      display: grid;
+   display: grid;
     }
     .header-logo {
       letter-spacing: normal;
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
   }
 
@@ -32,30 +36,27 @@
       }
     }
   }
+ #steps{
+height: 100%;
+  .main-steps-list {
+    flex-direction: column;
+    padding: 1.5em 0;
 
-
-    .main-steps-list {
-      flex-direction: column;
-      padding: 1.5em 0;
-
-      img {
-        padding: 0.4em 0;
-        width: 100%;
-      }
-
-      p {
-        color: black;
-      }
+    img {
+      padding: 0.4em 0;
+      width: 100%;
     }
 
-    .list-liner-change-right,
-    .list-liner-change-left {
-      background: none;
+    p {
+      color: black;
     }
-   
-  .main-title {
-    font-size: 2.4rem;
   }
+ }
+
+ 
+
+   
+ 
   .main-hero {
     flex-direction: column;
     height: 100%;
@@ -63,7 +64,7 @@
       width: 100vw;
     }
     .main-hero__text {
-      width: 100vw;
+ width: 98vw;
 
       h2 {
         letter-spacing: none;
@@ -83,9 +84,8 @@
   //swhy
 
 #Why{
-  height: 100%;
+ 
  padding: 0 0.5em;
-margin-top: 10.5vh;
 div{
   h2{
     text-align: center;
