@@ -14,12 +14,17 @@ const ent5 = document.getElementById("ent5");
 const ent6 = document.getElementById("ent6");
 const ent7 = document.getElementById("ent7");
 const back = document.getElementById("back");
+const griddiv = document.getElementById("griddiv");
 const balanceresultsend = document.getElementById("balanceresultsend");
 /*
 account
 */
 
-back.addEventListener("click");
+function btnGroph() {
+  back.style.display = "none";
+  griddiv.style.display = "none";
+}
+
 function send() {
   balanceresultsend.innerText = document.getElementById("sendmoney").value;
 }
@@ -103,6 +108,7 @@ loginbtn.addEventListener(
         ent5.innerText = `${id1.entiry5}`;
         ent6.innerText = `${id1.entiry6}`;
         ent7.innerText = `${id1.entiry7}`;
+        btnGroph();
       }
     } else if (logininputid.value === id2.email) {
       if (logininputpass.value === id2.pass) {
@@ -117,6 +123,7 @@ loginbtn.addEventListener(
         ent5.innerText = `${id2.entiry5}`;
         ent6.innerText = `${id2.entiry6}`;
         ent7.innerText = `${id2.entiry7}`;
+        btnGroph();
       }
     } else if (logininputid.value === id3.email) {
       if (logininputpass.value === id3.pass) {
@@ -131,6 +138,7 @@ loginbtn.addEventListener(
         ent5.innerText = `${id3.entiry5}`;
         ent6.innerText = `${id3.entiry6}`;
         ent7.innerText = `${id3.entiry7}`;
+        btnGroph();
       }
     } else if (logininputid.value === id4.email) {
       if (logininputpass.value === id4.pass) {
@@ -145,6 +153,7 @@ loginbtn.addEventListener(
         ent5.innerText = `${id4.entiry5}`;
         ent6.innerText = `${id4.entiry6}`;
         ent7.innerText = `${id4.entiry7}`;
+        btnGroph();
       }
     }
   },
