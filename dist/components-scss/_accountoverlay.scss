@@ -9,7 +9,7 @@
   background-color: rgb(55, 120, 177);
   transform: translate(-50%,-50%);
   text-align: center;
-  display: flex;//noe
+  display: flex;//flez
   flex-direction: column;
   padding: 0.5em 0;
   align-items: center;
@@ -143,7 +143,7 @@ margin-left: 0.2em;
 }
 }
 .grid{
-  display: flex;
+  display: flex;//flex
   align-items: center;
   justify-content: center;
   width: 100vw;
@@ -233,7 +233,7 @@ margin-left: 0.2em;
   flex-direction: column;
   height: 100vh;
   justify-content: center;
-  display: none;
+  display: none;//none
   background-color: white;
   h2{
     text-align: center; 

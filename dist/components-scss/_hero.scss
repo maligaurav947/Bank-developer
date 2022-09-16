@@ -3,6 +3,9 @@
  align-items: center;
  justify-content: center;
  height: 70vh;
+ img{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+ }
  .main-hero__text {
   width: 70vw;
   padding: 0 0.5em;
@@ -10,7 +13,7 @@
 
   h2 {
    letter-spacing: 1.5px;
-   color: rgb(0, 0, 0);
+  color: black;
    text-shadow: 2.5px 5px whitesmoke;
   }
 

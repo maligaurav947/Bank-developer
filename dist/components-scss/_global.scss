@@ -15,10 +15,9 @@
 
 html {
  scroll-behavior: smooth;
- background-color: #FAACA8;
- background-image: linear-gradient(0deg, #FAACA8 0%, #DDD6F3 100%);
- 
-
+ //background-color: #FAACA8;
+ //background-image: linear-gradient(0deg, #FAACA8 0%, #DDD6F3 100%);
+ background-image: linear-gradient( 135deg, #FFF5C3 10%, #9452A5 100%);
 } 
  
 
@@ -119,7 +118,7 @@ section {
 .main-info {
  font-size: 1rem;
  font-family: 'Poppins', sans-serif;
- color: rgb(0, 0, 0);
+
 }
 
 .changecolor {

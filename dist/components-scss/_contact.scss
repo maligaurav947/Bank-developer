@@ -1,10 +1,14 @@
 #contact-main {
+iframe{
+ box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
  h2 {
   margin-top: -0.5em;
   margin-bottom: 1.5em;
   letter-spacing: 1.5px;
   color: rgb(0, 0, 0);
   text-shadow: 2.5px 5px whitesmoke;
+
  }
 
  height: 100vh;

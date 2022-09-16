@@ -16,9 +16,28 @@ const ent7 = document.getElementById("ent7");
 const back = document.getElementById("back");
 const griddiv = document.getElementById("griddiv");
 const balanceresultsend = document.getElementById("balanceresultsend");
+const sendmoneybtn = document.getElementById("sendmoneybtn");
+const loanbtn = document.getElementById("loanbtn");
+const balanceresultloan = document.getElementById("balanceresultloan");
+const inputvalue = document.getElementById("inputvalue");
+const loaninput = document.getElementById("loaninput");
+const blanceresulthidden = document.getElementById("blanceresulthidden");
+const blanceresulthiddensend = document.getElementById(
+  "blanceresulthiddensend"
+);
 /*
 account
 */
+
+sendmoneybtn.addEventListener("click", () => {
+  balanceresultloan.innerText = inputvalue.value;
+
+  blanceresulthiddensend.style.display = "block";
+});
+loanbtn.addEventListener("click", () => {
+  balanceresultsend.innerText = loaninput.value;
+  blanceresulthidden.style.display = "block";
+});
 
 function btnGroph() {
   back.style.display = "none";
