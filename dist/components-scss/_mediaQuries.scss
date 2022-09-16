@@ -1,14 +1,14 @@
 @media screen and(max-width:456px) {
-.show-modal{
-  color: white;
-}
+  .show-modal {
+    color: white;
+  }
   .main-title {
     font-size: 2.4rem;
   }
   .main-header {
     height: 10vh;
     #baricon {
-   display: grid;
+      display: grid;
     }
     .header-logo {
       letter-spacing: normal;
@@ -38,27 +38,23 @@
       }
     }
   }
- #steps{
-height: 100%;
-  .main-steps-list {
-    flex-direction: column;
-    padding: 1.5em 0;
+  #steps {
+    height: 100%;
+    .main-steps-list {
+      flex-direction: column;
+      padding: 1.5em 0;
 
-    img {
-      padding: 0.4em 0;
-      width: 100%;
-    }
+      img {
+        padding: 0.4em 0;
+        width: 100%;
+      }
 
-    p {
-      color: black;
+      p {
+        color: black;
+      }
     }
   }
- }
 
- 
-
-   
- 
   .main-hero {
     flex-direction: column;
     height: 100%;
@@ -66,7 +62,7 @@ height: 100%;
       width: 100vw;
     }
     .main-hero__text {
- width: 98vw;
+      width: 98vw;
 
       h2 {
         letter-spacing: none;
@@ -85,17 +81,15 @@ height: 100%;
   }
   //swhy
 
-#Why{
- 
- padding: 0 0.5em;
-div{
-  h2{
-    text-align: center;
-    font-size: 2rem;
+  #Why {
+    padding: 0 0.5em;
+    div {
+      h2 {
+        text-align: center;
+        font-size: 2rem;
+      }
+    }
   }
-}
- 
-}
   //Contact
 
   #contact-main {
@@ -140,6 +134,45 @@ div{
   footer {
     flex-direction: column;
   }
-
-
+  .main-account {
+    width: 100%;
+     display: none;
+    flex-direction: column;
+    h2{
+      position: relative;
+      left: 0;
+      font-size: 3.9rem;
+    }
+    #itemname{
+      display: block;
+      font-size: 2.9rem;
+    }
+    .total-blance{
+      margin-top: 2.25vh;
+      font-size: 2rem;
+    }
+    .container{
+      flex-direction: column;
+      .left-section{
+        width:95vw;
+        .request-loan{
+          height: 36vh;
+          background-color: cadetblue;
+          .request-loan__title{
+            letter-spacing: 0;
+          }
+        }
+        .send-money{
+          height: 36vh;
+          .send-money__title{
+             letter-spacing: 0;
+          }
+        }
+      }
+      .right-section{
+        width:100vw;
+      height: 100%;
+      }
+    }
+  }
 }

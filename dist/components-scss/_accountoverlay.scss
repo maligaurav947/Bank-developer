@@ -1,7 +1,138 @@
+
+.login-account{
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width:90%;
+  height: 80%;
+  background-color: rgb(55, 120, 177);
+  transform: translate(-50%,-50%);
+  text-align: center;
+  display: grid;//noe
+  padding: 0.5em 0;
+  align-items: center;
+  justify-content: center;
+  #loginicon{
+    position: fixed;
+    right: 15px;
+    top: 15px;
+display: flex;
+align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: transparent;
+ 
+    i{
+      font-size: 1.9rem;
+ position: absolute;
+ top: 6px;
+ left: 12.5px;
+    }
+  }
+  &__title{
+    font-size: 3.5rem;
+    color: orange;
+  }
+  &__form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    input{
+      padding: 0 0.2em ;
+      margin: 0.9em 0;
+      width: 550px;
+      height: 45px;
+      border: none;
+      background-color: transparent;
+      border-bottom: 2px solid black;
+      color: white;
+      outline: none;
+    &::placeholder{
+      color: white;
+    }
+    }
+  }
+ 
+}
+
+
+
+.button-80 {
+  background: #fff;
+  backface-visibility: hidden;
+  border-radius: .375rem;
+  border-style: solid;
+  border-width: .125rem;
+  box-sizing: border-box;
+  color: #212121;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,Helvetica,sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  line-height: 1.3;
+  padding: .875rem 1.125rem;
+  position: relative;
+  width: 120px;
+  text-decoration: none;
+  transform: translateZ(0) scale(1);
+  transition: transform .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  justify-self: end;
+}
+
+.button-80:not(:disabled):hover {
+  transform: scale(1.05);
+}
+
+.button-80:not(:disabled):hover:active {
+  transform: scale(1.05) translateY(.125rem);
+}
+
+.button-80:focus {
+  outline: 0 solid transparent;
+}
+
+.button-80:focus:before {
+  content: "";
+  left: calc(-1*.375rem);
+  pointer-events: none;
+  position: absolute;
+  top: calc(-1*.375rem);
+  transition: border-radius;
+  user-select: none;
+}
+
+.button-80:focus:not(:focus-visible) {
+  outline: 0 solid transparent;
+}
+
+.button-80:focus:not(:focus-visible):before {
+  border-width: 0;
+}
+
+.button-80:not(:disabled):active {
+  transform: translateY(.125rem);
+}
+
+
+
+
+
+
 .login-form {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+
 }
 .inputlogin {
   border-radius: 50px;
@@ -9,7 +140,7 @@
   height: 32px;
   font-size: 1rem;
   padding: 0.8em 0.5em;
-  margin: 0 0.5em;
+  margin: 0 0.5em;    
 }
 
 .btn-header-account {
@@ -20,7 +151,7 @@
   font-size: 1rem;
   border-radius: 50px;
   background-color: springgreen;
-  outline: none;
+  outline: none;  
 
   &:hover {
     transition: all 150ms linear;
@@ -29,7 +160,21 @@
 }
 .main-account {
   height: 100vh;
-  display: none;//
+  display: none;
+  background-color: white;
+  h2{
+    text-align: center; 
+    font-size: 2.4rem; 
+    position: absolute; 
+    left: 38%;
+top: 15px;
+
+  }
+  #itemname{
+    font-size: 2.3rem;
+    color: rgb(132, 255, 0); 
+    border-bottom: 2px solid black;
+  }
   .total-blance {
     text-align: end;
     font-size: 2.5rem;
@@ -200,126 +345,3 @@
 }
 
 
-
-.login-account{
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width:90%;
-  height: 80%;
-  background-color: rgb(55, 120, 177);
-  transform: translate(-50%,-50%);
-  text-align: center;
-  display: grid;//
-  padding: 0.5em 0;
-  align-items: center;
-  justify-content: center;
-  #loginicon{
-    position: fixed;
-    right: 15px;
-    top: 15px;
-display: flex;
-align-items: center;
-    width: 50px;
-    height: 50px;
-    border: 2px solid white;
-    border-radius: 50%;
-    cursor: pointer;
-    background-color: transparent;
- 
-    i{
-      font-size: 1.9rem;
- position: absolute;
- top: 6px;
- left: 12.5px;
-    }
-  }
-  &__title{
-    font-size: 3.5rem;
-    color: orange;
-  }
-  &__form{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    input{
-      padding: 0 0.2em ;
-      margin: 0.9em 0;
-      width: 550px;
-      height: 45px;
-      border: none;
-      background-color: transparent;
-      border-bottom: 2px solid black;
-      color: white;
-      outline: none;
-    &::placeholder{
-      color: white;
-    }
-    }
-  }
- 
-}
-
-
-
-.button-80 {
-  background: #fff;
-  backface-visibility: hidden;
-  border-radius: .375rem;
-  border-style: solid;
-  border-width: .125rem;
-  box-sizing: border-box;
-  color: #212121;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Circular,Helvetica,sans-serif;
-  font-size: 1.125rem;
-  font-weight: 700;
-  letter-spacing: -.01em;
-  line-height: 1.3;
-  padding: .875rem 1.125rem;
-  position: relative;
-  width: 120px;
-  text-decoration: none;
-  transform: translateZ(0) scale(1);
-  transition: transform .2s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  justify-self: end;
-}
-
-.button-80:not(:disabled):hover {
-  transform: scale(1.05);
-}
-
-.button-80:not(:disabled):hover:active {
-  transform: scale(1.05) translateY(.125rem);
-}
-
-.button-80:focus {
-  outline: 0 solid transparent;
-}
-
-.button-80:focus:before {
-  content: "";
-  left: calc(-1*.375rem);
-  pointer-events: none;
-  position: absolute;
-  top: calc(-1*.375rem);
-  transition: border-radius;
-  user-select: none;
-}
-
-.button-80:focus:not(:focus-visible) {
-  outline: 0 solid transparent;
-}
-
-.button-80:focus:not(:focus-visible):before {
-  border-width: 0;
-}
-
-.button-80:not(:disabled):active {
-  transform: translateY(.125rem);
-}
