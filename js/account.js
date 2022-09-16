@@ -15,7 +15,7 @@ const ent6 = document.getElementById("ent6");
 const ent7 = document.getElementById("ent7");
 const balanceresultsend = document.getElementById("balanceresultsend");
 /*
-
+account
 */
 function send() {
   balanceresultsend.innerText = document.getElementById("sendmoney").value;
@@ -89,7 +89,7 @@ loginbtn.addEventListener(
   () => {
     if (logininputid.value === id1.email) {
       if (logininputpass.value === id1.pass) {
-        account.style.display = "grid";
+        account.style.display = "flex";
         loginaccount.style.display = "none";
         itemname.innerText = `${id1.name}`;
         totaldigit.innerText = `${id1.totalblance}`;
@@ -103,7 +103,7 @@ loginbtn.addEventListener(
       }
     } else if (logininputid.value === id2.email) {
       if (logininputpass.value === id2.pass) {
-        account.style.display = "grid";
+        account.style.display = "flex";
         loginaccount.style.display = "none";
         itemname.innerText = `${id2.name}`;
         totaldigit.innerText = `${id2.totalblance}`;
@@ -117,7 +117,7 @@ loginbtn.addEventListener(
       }
     } else if (logininputid.value === id3.email) {
       if (logininputpass.value === id3.pass) {
-        account.style.display = "grid";
+        account.style.display = "flex";
         loginaccount.style.display = "none";
         itemname.innerText = `${id3.name}`;
         totaldigit.innerText = `${id3.totalblance}`;
@@ -131,7 +131,7 @@ loginbtn.addEventListener(
       }
     } else if (logininputid.value === id4.email) {
       if (logininputpass.value === id4.pass) {
-        account.style.display = "grid";
+        account.style.display = "flex";
         loginaccount.style.display = "none";
         itemname.innerText = `${id4.name}`;
         totaldigit.innerText = `${id4.totalblance}`;

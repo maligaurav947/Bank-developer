@@ -136,9 +136,10 @@
   }
   .main-account {
     width: 100%;
-     display: none;
+    display: none;
+    justify-content: unset;
     flex-direction: column;
-    h2{
+     h2{
       position: relative;
       left: 0;
       font-size: 3.9rem;
