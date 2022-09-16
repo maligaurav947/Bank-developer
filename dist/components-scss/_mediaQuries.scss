@@ -41,7 +41,6 @@
       img {
         padding: 0.4em 0;
         width: 100%;
-        object-fit: cover;
       }
 
       p {
@@ -84,9 +83,9 @@
   //swhy
 
 #Why{
-  height: 250vh;
+  height: 100%;
  padding: 0 0.5em;
-margin-top: -15.5vh;
+margin-top: 10.5vh;
 div{
   h2{
     text-align: center;
